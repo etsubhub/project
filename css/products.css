@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #013B2C;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img{
+  text-decoration: none;
+  width: 200px;
+  height: 140px ;
+}
+.group{
+  display: flex;
+  align-items: center;
+}
+header ul{
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+#sign{
+  background: #27AE60;
+  border-radius: 20px;
+  margin: 50px 0 ;
+  padding: 10px 15px;
+  justify-content: center;
+}
+header ul li a::before{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: whitesmoke;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: right;
+}
+header ul li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#sicon{
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.search-box{
+  background: #E8E8E4;
+  position: absolute;
+  top: 54px;
+  right: 0;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #27AE60;
+  display: none;
+}
+
+.search-box:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #27AE60;
+}
+
+.search-box input[type="text"]{
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid #27AE60;
+  outline: none;
+}
+
+.search-box input[type="button"]{
+  width: 80px;
+  padding: 5px 0;
+  background: #27AE60;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #27AE60;
+  outline: none;
+  cursor: pointer;
+}
+.head{
+    margin-top: 100px;
+    padding: 0 138px;
+    padding-bottom: 20px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 20px;
+    justify-content: space-between;
+    border-bottom: solid #DE971B;
+    border-width: 2px;
+}
+.container1{
+  display: flex;
+  justify-content: space-evenly;
+}
+#ph1{
+  text-transform: uppercase;
+  padding: 20px 80px;
+}
+.procon{
+  width: 350px;
+  height: 386px;
+  border-radius: 20px;
+  border: 1px solid #4F4F4F;
+}
+.pro1{
+  text-align: center;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+}
+.procon .pro1 img{
+  width: 190px;
+  height: 200px;
+  margin: -6px 50px;
+  border-radius: 5px;
+}
+.procon .pro1 h3{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.procon .pro1 h5{
+  font-size: 15px;
+  line-height: 28px;
+  color: #DE971B;
+  padding-bottom: 20px;
+}
+.procon .pro1 button{
+  width: 115px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #013B2C;
+  color: #013B2C;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.procon .pro1 button:hover{
+  background: #27AE60;
+  color: white;
+}
+.procon .pro2{
+  text-align: center;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+}
+.procon .pro2 img{
+  width: 345px;
+  height: 190px;
+  border-radius: 20px;
+}
+.procon .pro2 h3{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.procon .pro2 h5{
+  font-size: 15px;
+  line-height: 28px;
+  color: #DE971B;
+  padding-bottom: 20px;
+}
+.procon .pro2 button{
+  width: 115px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #013B2C;
+  color: #013B2C;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.procon .pro2 button:hover{
+  background: #27AE60;
+  color: white;
+}
