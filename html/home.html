@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/css/home.css">
+  <title>Document</title>
+</head>
+<body> 
+  <header>
+    <a href="home.html" class="logo"><img src="/palm logo 1.png" alt=""></a>
+    <div class="group">
+      <ul class="nav">
+        <li><a href="home.html">home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" id="sign">Login</a></li>
+        <li><a href="#" id="sign">sign up</a></li>
+        <li class="active">
+          <i class="fa fa-search" aria-hidden="true" id="sicon"></i>
+         <div class="search-box">
+            <input type="text" placeholder="search here..."/>
+            <input type="button" value="Search"/>
+          </div>
+        </li>
+      </ul>
+    
+  </header>
+  <div class="pic">
+    <h1>welcome to palm land</h1>
+    <h6>where you can explore all the wonders of palm fruit</h6>
+  </div>
+
+  <div class="sup">
+   <div class="top">
+     <h3>farmers</h3>
+     <div class="right">
+       <div class="farm">
+         <img src="/farmers.png" alt="">
+       </div>
+       <ul id="rightl">
+         <li>better value for your product</li>
+         <li>market guidance</li>
+         <li>Better value for your produce</li>
+       </ul>
+       <button type="button" id="fbtn">sell to us</button>
+     </div>
+    
+   </div>
+   <div class="top2">    
+     <h3>buyers</h3>
+     <div class="left">
+       <div class="sell">
+         <img src="/sellers.png" alt="">
+       </div>
+       <ul id="leftl">
+         <li>Get fresh and better quality products</li>
+         <li>Fair and transparent pricing</li>
+         <li>Convenience</li>
+       </ul>
+       <button type="submit" id="sbtn">buy from us</button>
+     </div>
+   </div>
+   </div>
+    <h1> how we operate</h1>
+    <div class="bkg">
+      <div class="sub2">
+        <div class="box1">
+          <div class="pc1">
+            <img src="/sellus.png" alt="">
+          </div>
+          <h5>sell to us</h5>
+        </div>
+        <div class="box1">
+          <div class="pc2">
+            <img src="/buyus.png" alt="">
+          </div>
+          <h5>buy from us</h5>
+        </div>
+        <div class="box1">
+          <div class="pc3">
+            <img src="/logistics.png" alt="">
+          </div>
+          <h5>logistics</h5>
+        </div>
+   </div>
+  </div>
+  <h1 id="new">news</h1>
+  <div class="bkg2">
+    <div class="box2">
+      <div class="pic1">
+        <img src="/pic1.png" alt="">
+      </div>
+      <p>Palm oil producers seek ‘funding, seedlings, technology’ to stay in business</p>
+    </div>
+    <div class="box2">
+      <div class="pic2">
+        <img src="/pic2.png" alt="">
+      </div>
+      <p>Palm oil prices reach record highs in 2022</p>
+    </div>
+    <div class="box2">
+      <div class="pic3">
+        <img src="/pic3.png" alt="">
+      </div>
+      <p>Palm oil producers drawn to dollars amid unmet local demand</p>
+    </div>
+    <div class="box2">
+      <div class="pic4">
+        <img src="/pic4.png" alt="">
+      </div>
+      <p>Reviving Oil Palm as Major Foreign Exchange Earner</p>
+    </div>
+  </div>
+
+  <div class="fqns">
+    <h1>Frequently asked questions</h1>
+    <p id="pfq">Everything you need to know about the product and billing.</p>
+    <div class="qns">
+      <div class="qn">
+        <h4>Is there a cash refund?</h4>
+        <p>Yes, your cash can be refunded to your account, if you're not pleased with the products you ordered or didn't get your order.</p>
+      </div>
+      <div class="icon1">
+        <img src="/Icon1.png" alt="">
+      </div>
+    </div>
+    <div class="qns">
+      <h4>When are products restocked on the site for sales</h4>
+      <img src="/Icon2.png" alt="">
+    </div>
+    <div class="qns">
+      <h4>What is your cancellation policy?</h4>
+      <img src="/Icon2.png" alt="">
+    </div>
+    <div class="qns">
+      <h4>Do you offer discounts or promotional opportunities?</h4>
+      <img src="/Icon2.png" alt="">
+    </div>
+    <div class="qns">
+      <h4>How long does shipping take?</h4>
+      <img src="/Icon2.png" alt="">
+    </div>
+    <div class="qns">
+      <h4>I placed an order but never received a confirmation mail, what do i do?</h4>
+      <img src="/Icon2.png" alt="">
+    </div>
+  </div>
+  <div class="still">
+    <h4>still have questions?</h4>
+    <p>Can't find the answer you're looking for? Please chat to our friendly team.</p>
+    <button type="button">Get in touch</button>
+  </div>
+
+
+
+
+
+
+  <script>
+  $(document).ready(function() {
+     
+     $(".fa-search").click(function() {
+        $(".search-box").toggle();
+        $("input[type='text']").focus();
+      });
+   
+   });
+  </script>
+
+</body>
+
+</html>

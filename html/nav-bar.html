@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/products.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo"><img src="/palm logo 1.png" alt=""></a>
+        <div class="group">
+          <ul class="nav">
+            <li><a href="home.html">home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" id="sign">Login</a></li>
+            <li><a href="#" id="sign">sign up</a></li>
+            <li class="active">
+              <i class="fa fa-search" aria-hidden="true" id="sicon"></i>
+             <div class="search-box">
+                <input type="text" placeholder="search here..."/>
+                <input type="button" value="Search"/>
+              </div>
+            </li>
+          </ul>
+        
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        $(document).ready(function() {
+           
+           $(".fa-search").click(function() {
+              $(".search-box").toggle();
+              $("input[type='text']").focus();
+            });
+         
+         });
+        </script>
+
+
+
+
+
+    </body>
+</html>
